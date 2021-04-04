@@ -1,0 +1,22 @@
+<html>
+    <head>
+    <title>Kelvin to Fahrenheit</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<p>
+  <label>Kelvin</label>
+  <input id="inputKelvin" type="number" placeholder="Kelvin" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=valNum-273.15;
+}
+</script>
+
+</body></html>
